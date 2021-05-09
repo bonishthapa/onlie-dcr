@@ -1,0 +1,1 @@
+web: gunicorn online_dcr.wsgi --log-file -
