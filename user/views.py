@@ -6,7 +6,11 @@ from rest_framework.permissions import AllowAny
 from rest_framework import filters
 from django.views.decorators.cache import cache_page
 from django.utils.decorators import method_decorator
+from django.http import HttpResponse
 
+
+def home(request):
+    return  HttpResponse("Welcome")
 
 class DesignationListView(generics.ListAPIView):
     queryset = Designation.objects.all()

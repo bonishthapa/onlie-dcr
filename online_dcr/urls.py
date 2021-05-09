@@ -23,5 +23,5 @@ urlpatterns = [
     path('report-generator/', include('report_generator.urls')),
     path('salary-expenses/', include('salary_expenses.urls')),
     path('tour-plan-generator/', include('tour_plan_generator.urls')),
-    path('user/', include('user.urls')),
+    path('', include('user.urls')),
 ]
